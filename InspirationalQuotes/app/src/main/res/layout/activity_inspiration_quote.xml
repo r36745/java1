@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#b2d0b2"
+    tools:context=".InspirationQuoteActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motivational_header"
+        android:textSize="24sp"
+        android:id="@+id/motoText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dp"
+        android:text="@string/fixed_quoteData"
+        android:layout_below="@+id/motoText"
+        android:textSize="20sp"
+        android:id="@+id/quoteText"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/quoteText"
+        android:paddingTop="21dp"
+        android:layout_below="@+id/motoText"
+        android:text="@string/quote_num_value"
+        android:textSize="22sp"
+        android:id="@+id/quoteNumTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motivation_word"
+        android:paddingTop="20dp"
+        android:id="@+id/motivationTextView"
+        android:textSize="24sp"
+        android:layout_below="@+id/quoteText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:hint="@string/motivational_hint"
+        android:textSize="23sp"
+        android:layout_toRightOf="@+id/motivationTextView"
+        android:layout_below="@id/quoteNumTextView"
+        android:id="@+id/motoWordTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/index_selection"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/indexString"
+        android:layout_below="@+id/motivationTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/index_value"
+        android:textSize="23sp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/indexMotivation"
+        android:layout_toRightOf="@+id/indexString"
+        android:layout_below="@id/motivationTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entry Average Length:"
+        android:textSize="24sp"
+        android:id="@+id/avgLgthView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/indexString"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="12dp"
+        android:textSize="22dp"
+        android:id="@+id/avgLengthValue"
+        android:layout_below="@id/indexMotivation"
+        android:layout_toRightOf="@+id/avgLgthView"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/motivationEditText"
+
+        android:hint="@string/hint_motivationNote"
+        android:layout_centerVertical="true"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/motivation_index_editText"
+        android:id="@+id/motivationIndexEditText"
+        android:layout_below="@+id/motivationEditText"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getMotivation_button"
+        android:id="@+id/grabMotivation"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/motivation_button"
+        android:layout_above="@+id/grabMotivation"
+        android:id="@+id/motivationButton"/>
+
+
+</RelativeLayout>
