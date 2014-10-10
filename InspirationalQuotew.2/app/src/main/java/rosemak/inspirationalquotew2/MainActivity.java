@@ -1,10 +1,10 @@
 package rosemak.inspirationalquotew2;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 //10/8/14
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     public final static String TAG = "Inspirational Quotes";
     public int motivationLength;
@@ -44,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
         final Button collectionButton = (Button) findViewById(R.id.collectionButton);
         final TextView motivationWorldText = (TextView) findViewById(R.id.motivationWordTextView);
         final TextView indexMotivation = (TextView) findViewById(R.id.indexMotivation);
-        final TextView collectionTextView = (TextView) findViewById(R.id.collectionTextView);
+
 
 
         avgLengthValue = (TextView) findViewById(R.id.avgLengthValue);
@@ -154,7 +154,30 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View view) {
 
                 String finalCollection = String.valueOf(motivationList);
-                collectionTextView.setText(finalCollection);
+               
+
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
+                alertDialog.setTitle("Alert Window");
+                alertDialog.setIcon(R.drawable.ic_launcher);
+                alertDialog.setMessage("Inspiration Selected");
+                final TextView inspirationName = new TextView(MainActivity.this);
+                inspirationName.setText(finalCollection);
+                alertDialog.setView(inspirationName);
+                alertDialog.setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+
+                alertDialog.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+
+                    }
+                });
+                alertDialog.show();
 
             }
         };

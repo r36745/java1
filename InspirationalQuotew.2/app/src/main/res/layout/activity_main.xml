@@ -6,6 +6,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#b2d0b2"
     tools:context=".ItWorked!">
 
     <TextView
@@ -133,16 +134,7 @@
         android:layout_below="@id/motivationIndexEditText"
         android:id="@+id/collectionButton"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/collectionButton"
-        android:layout_below="@id/motivationIndexEditText"
-        android:layout_toEndOf="@+id/collectionButton"
-        android:id="@+id/collectionTextView"
-        android:layout_marginTop="25dp"
-        android:text="@string/collection_data"
-        android:textSize="23sp"/>
+
 
 
 </RelativeLayout>
