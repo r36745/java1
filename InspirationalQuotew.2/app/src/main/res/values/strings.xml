@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Just Testing</string>
+    <string name="action_settings">Settings</string>
+    <string name="inspiration_heading">Something to get you through the Day!</string>
+    <string name="hint_motivationNote">Hard Work equals success!</string>
+    <string name="motivational_header">We Accept Inspirational Thoughts!</string>
+    <string name="motivation_button">Add Motivation</string>
+    <string name="fixed_quoteData">Thought: </string>
+    <string name="quote_num_value">0</string>
+    <string name="motivation_word">Motivation Thought: </string>
+    <string name="motivational_hint">Inspired!</string>
+    <string name="index_selection">Selected Index: </string>
+    <string name="getMotivation_button">Grab a Motivation</string>
+    <string name="index_value">Patience</string>
+    <string name="motivation_index_editText">Motivation Index</string>
+    <string name="average_length">Entry Average Length:</string>
+    <string name="avg_lgth_value">0</string>
+    <string name="first_Edit_box">Hard work equals success</string>
+    <string name="collection">Collection</string>
+    <string name="collection_data">Quote Collection</string>
+
+</resources>
