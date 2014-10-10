@@ -1,10 +1,10 @@
 package rosemak.inspirationalquotew2;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 //10/8/14
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     public final static String TAG = "Inspirational Quotes";
     public int motivationLength;
@@ -154,7 +154,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 
                 String finalCollection = String.valueOf(motivationList);
-               
+
 
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
                 alertDialog.setTitle("Alert Window");
