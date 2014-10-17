@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Recipe Station</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="food_pic">foodRecipe</string>
+    <string name="recipe_name">Recipe Name=</string>
+    <string name="name_text">test</string>
+    <string name="spinner_foodCategory">Recipe Category=</string>
+    <string name="spinner_foodType">test</string>
+    <string name="spinner_recipeRating">Recipe Rating=</string>
+    <string name="spinner_testRating">Test Rating</string>
+    <string name="listView_recipeName">Recipe Name:</string>
+    <string name="listview_recipeRating">Recipe Rating:</string>
+
+    <string-array name="recipe_array">
+        <item>Favorite Recipes</item>
+        <item>Curry Chicken</item>
+        <item>Enchilada</item>
+        <item>Shrimp Alfredo</item>
+        <item>Jambalaya</item>
+        <item>Jerk Chicken</item>
+        <item>Lobster Bisque</item>
+        <item>Football Wings</item>
+        <item>BeerCan Chicken</item>
+    </string-array>
+
+</resources>

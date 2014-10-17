@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFF8DC"
+    tools:context=".Main">
+
+
+
+    <ListView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:id="@+id/recipe_listView">
+        </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_recipeName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_recipeCategory"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_recipeRating"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listView_recipeName"
+        android:id="@+id/listView_hint"
+        android:layout_toRightOf="@+id/recipe_listView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B31B1B"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@+id/listView_hint"
+        android:layout_toEndOf="@+id/recipe_listView"
+        android:id="@+id/detailNameTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe Category:"
+        android:id="@+id/listView_foodCategory"
+        android:layout_toRightOf="@+id/recipe_listView"
+        android:layout_below="@+id/detailNameTextView"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/listView_foodCategory"
+        android:text="test"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/recipe_listView"
+        android:layout_below="@+id/detailNameTextView"
+        android:id="@+id/detailCategoryTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_foodRating"
+        android:layout_toRightOf="@+id/recipe_listView"
+        android:text="@string/listview_recipeRating"
+        android:layout_below="@+id/listView_foodCategory"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailRatingTextView"
+        android:layout_toRightOf="@+id/listView_foodRating"
+        android:layout_toEndOf="@+id/recipe_listView"
+        android:layout_below="@id/detailCategoryTextView"
+        android:layout_marginLeft="5dp"
+        android:text="rating"/>
+
+</RelativeLayout>
