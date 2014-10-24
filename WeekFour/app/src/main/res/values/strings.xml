@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeekFour</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo_weather">beerCapLogo</string>
+    <string name="festival_header">Weather Updates!</string>
+    <string name="weather_windChill">Temp:</string>
+    <string name="weather_direction">Chill Direction:</string>
+    <string name="weather_windSpeed">Wind Speed:</string>
+    <string name="weather_chillTemp">temp</string>
+    <string name="weather_chillDirection"></string>
+    <string name="weather_speed">speed</string>
+
+</resources>

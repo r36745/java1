@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tickerHeader"
+        android:text="@string/festival_header"
+        android:textSize="25sp"
+        android:layout_margin="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_windChill"
+        android:text="@string/weather_windChill"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/tickerHeader"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_direction"
+        android:text="@string/weather_direction"
+        android:layout_below="@id/weather_windChill"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_windSpeed"
+        android:text="@string/weather_windSpeed"
+        android:layout_below="@+id/weather_direction"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_cityTemp"
+        android:text="@string/weather_chillTemp"
+        android:textSize="25sp"
+        android:layout_below="@+id/tickerHeader"
+        android:layout_toRightOf="@+id/weather_windChill"
+        android:layout_toEndOf="@+id/weather_windChill"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_chillDirection"
+        android:text="@string/weather_chillDirection"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/weather_direction"
+        android:layout_toEndOf="@+id/weather_direction"
+        android:layout_below="@+id/weather_cityTemp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_cityWindSpeed"
+        android:text= "@string/weather_speed"
+        android:textSize="25sp"
+        android:layout_below="@+id/weather_chillDirection"
+        android:layout_toRightOf="@+id/weather_windSpeed"
+        android:layout_toEndOf="@+id/weather_windSpeed"
+        android:layout_marginTop="5dp"/>
+
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="140dp"
+    android:src="@drawable/weather"
+    android:contentDescription="@string/logo_weather"
+    android:layout_below="@id/weather_chillDirection"
+    android:layout_margin="100dp"
+    android:id="@+id/bottleCapImg"/>
+
+
+
+
+</RelativeLayout>
