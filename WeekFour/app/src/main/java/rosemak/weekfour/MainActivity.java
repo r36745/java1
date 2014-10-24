@@ -18,6 +18,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+//Steven Roseman
+//Java1
+
 
 public class MainActivity extends Activity {
     TextView cityTemp, chillDirection, weatherSpeed;
